@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <form action="" style="width: 300px; height: 600px; padding-left: 5px; border: solid 1px black;">
-        <div style="text-align: left; padding-top: 5px;">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." style="width: 185px;" required="true"/>
-        </div>
-        
-        <div style="text-align: left; padding-top: 5px;">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email aqui..." style="width: 185px;" required="true"/>
-        </div>
-        
-        <div style="text-align: left; padding-top: 20px;">
-            <label for="motivo">O que te motivou participar do evento</label>
-            <textarea name="motivo" id="motivo" cols="20" rows="5"></textarea>
-        </div>
-        
-        <div style="text-align: left; padding-top: 20px;">
-            <label for="modulo">Selecione seu módulo</label>
-            <select name="modulo" id="modulo">
-                <option disabled selected>Selecione o Módulo</option>
-                <option value="modulo-1">Módulo 1</option>
-                <option value="modulo-2">Módulo 2</option>
-                <option value="modulo-3">Módulo 3</option>
-                <option value="modulo-4">Módulo 4</option>
-                <option value="modulo-5">Módulo 5</option>
-            </select>
-        </div>
-        
-        <div style="text-align: left; padding-top: 20px;">
-            <label for="senha">Cadastre uma senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui..." style="width: 185px;" required="true"/>
-        </div>
+    <form>
+        <fieldset>
+            <h2>Evento</h2>
+            <div style="text-align: left; padding-top: 5px;">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." style="width: 185px;"
+                    required="true" />
+            </div>
 
-        <div style="text-align: left; padding-top: 5px;">
-            <label for="confirme-a-senha">Confirme a senha</label>
-            <input type="password" id="confirme-a-senha" name="confirme-a-senha" placeholder="Repita a senha..." style="width: 185px;" required="true"/>
-        </div>
+            <div style="text-align: left; padding-top: 5px;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email aqui..." style="width: 185px;"
+                    required="true" />
+            </div>
 
-        <div style="text-align: left; padding-top: 20px;">
-            <label>Deseja receber novidades em seu email?</label>
-        </div>
+            <div style="text-align: left; padding-top: 20px;">
+                <label for="motivo">O que te motivou participar do evento</label>
+            </div>
 
-        <div>
-            <Label for="notificacoes">Sim</Label>
-            <input type="radio" name="notificacoes" value="sim" checked/>
-            <label for="notificacoes">Não</label>
-            <input type="radio" name="notificacoes" value="nao"/>
-        </div>
-         
-        <div style="text-align: center; padding-top: 20px;">
-            <button type="submit">Cadastrar</button>
-        </div>
-        
+            <div>
+                <textarea name="motivo" id="motivo" cols="20" rows="5"></textarea>
+            </div>
 
-        
+            <div style="text-align: left; padding-top: 20px;">
+                <label for="modulo">Selecione seu módulo</label>
+                <select name="modulo" id="modulo">
+                    <option disabled>Selecione o Módulo</option>
+                    <option value="modulo-1">Módulo 1</option>
+                    <option value="modulo-2">Módulo 2</option>
+                    <option value="modulo-3">Módulo 3</option>
+                    <option value="modulo-4">Módulo 4</option>
+                    <option value="modulo-5">Módulo 5</option>
+                </select>
+            </div>
+
+            <div style="text-align: left; padding-top: 20px;">
+                <label for="senha">Cadastre uma senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui..."
+                    style="width: 185px;" required="true" />
+            </div>
+
+            <div style="text-align: left; padding-top: 5px;">
+                <label for="confirme-a-senha">Confirme a senha</label>
+                <input type="password" id="confirme-a-senha" name="confirme-a-senha" placeholder="Repita a senha..."
+                    style="width: 185px;" required="true" />
+            </div>
+
+            <div style="text-align: left; padding-top: 20px;">
+                <label>Deseja receber novidades em seu email?</label>
+            </div>
+
+            <div>
+                <input type="radio" name="notificacoes" value="sim" />
+                <Label for="notificacoes">Sim</Label>
+            </div>
+
+            <div>
+                <input type="radio" name="notificacoes" value="nao" />
+                <label for="notificacoes">Não</label>
+            </div>
+
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </fieldset>
     </form>
-    
+
 </body>
+
 </html>
